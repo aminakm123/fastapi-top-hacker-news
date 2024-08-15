@@ -1,12 +1,18 @@
 import requests
-from fastapi import FastAPI, HTTPException # type: ignore
+from fastapi import FastAPI, HTTPException
+from requests_cache import CachedSession
 
 app = FastAPI()
+
+session = CachedSession(
+    cache_name='cache/news',
+    expire_after = 600
+)
 
 @app.get("/")
 def get_top_news(count: int = 10):
     top_stories_url = "https://hacker-news.firebaseio.com/v0/topstories.json"
-    response = requests.get(top_stories_url)
+    response = session.get(top_stories_url)
     # print("response status code ",response.status_code)
     # print("response.json() ",response.json())
     # print("response.json()[:count] ",response.json()[:count])
