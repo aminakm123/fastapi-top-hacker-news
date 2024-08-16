@@ -57,3 +57,18 @@
 2024-08-15 13:29:45,162 - DEBUG - https://hacker-news.firebaseio.com:443 "GET /v0/item/41245159.json HTTP/11" 200 611
 2024-08-15 13:29:45,162 - DEBUG - response status code : 200
 2024-08-15 13:29:45,162 - DEBUG - top story - response.json() : {'by': 'microflash', 'descendants': 101, 'id': 41245159, 'kids': [41251301, 41254638, 41250818, 41246673, 41255708, 41250839, 41250487, 41252463, 41251199, 41250864, 41251114, 41254885, 41253118, 41254380, 41254191, 41254559, 41251219, 41253324, 41251561, 41254079, 41252805, 41251248, 41253599, 41253597, 41252519, 41252521, 41253320, 41253152, 41248905, 41253595, 41248865, 41252091, 41252385, 41249272, 41250931, 41252706, 41252311, 41251688, 41253068, 41250910, 41252310, 41251017], 'score': 477, 'time': 1723637543, 'title': 'Font with Built-In Syntax Highlighting', 'type': 'story', 'url': 'https://blog.glyphdrawing.club/font-with-built-in-syntax-highlighting/'}
+2024-08-16 09:49:05,587 - DEBUG - Initializing backend: None cache/news
+2024-08-16 09:49:05,588 - DEBUG - Initialized SQLiteDict with serializer: SerializerPipeline(name=pickle, n_stages=2)
+2024-08-16 09:49:05,589 - DEBUG - Opening connection to /app/cache/news.sqlite:responses
+2024-08-16 09:49:05,592 - DEBUG - Initialized SQLiteDict with serializer: None
+2024-08-16 09:49:05,592 - DEBUG - Opening connection to /app/cache/news.sqlite:redirects
+2024-08-16 09:52:09,814 - DEBUG - Initializing backend: None cache/news
+2024-08-16 09:52:09,815 - DEBUG - Initialized SQLiteDict with serializer: SerializerPipeline(name=pickle, n_stages=2)
+2024-08-16 09:52:09,815 - DEBUG - Opening connection to /app/cache/news.sqlite:responses
+2024-08-16 09:52:09,818 - DEBUG - Initialized SQLiteDict with serializer: None
+2024-08-16 09:52:09,818 - DEBUG - Opening connection to /app/cache/news.sqlite:redirects
+2024-08-16 10:09:32,606 - DEBUG - Initializing backend: None cache/news
+2024-08-16 10:09:32,606 - DEBUG - Initialized SQLiteDict with serializer: SerializerPipeline(name=pickle, n_stages=2)
+2024-08-16 10:09:32,607 - DEBUG - Opening connection to /app/cache/news.sqlite:responses
+2024-08-16 10:09:32,610 - DEBUG - Initialized SQLiteDict with serializer: None
+2024-08-16 10:09:32,610 - DEBUG - Opening connection to /app/cache/news.sqlite:redirects

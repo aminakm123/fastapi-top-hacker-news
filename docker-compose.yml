@@ -8,3 +8,11 @@ services:
       - "8000:8000"
     volumes:
       - ./logs:/app/logs
+
+  test:
+    build: .
+    command: pytest
+    volumes:
+      - .:app
+    depends_on:
+      - web
