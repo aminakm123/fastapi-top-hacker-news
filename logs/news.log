@@ -72,3 +72,58 @@
 2024-08-16 10:09:32,607 - DEBUG - Opening connection to /app/cache/news.sqlite:responses
 2024-08-16 10:09:32,610 - DEBUG - Initialized SQLiteDict with serializer: None
 2024-08-16 10:09:32,610 - DEBUG - Opening connection to /app/cache/news.sqlite:redirects
+2024-08-16 11:19:30,222 - DEBUG - Initializing backend: None cache/news
+2024-08-16 11:19:30,222 - DEBUG - Initialized SQLiteDict with serializer: SerializerPipeline(name=pickle, n_stages=2)
+2024-08-16 11:19:30,223 - DEBUG - Opening connection to /app/cache/news.sqlite:responses
+2024-08-16 11:19:30,225 - DEBUG - Initialized SQLiteDict with serializer: None
+2024-08-16 11:19:30,226 - DEBUG - Opening connection to /app/cache/news.sqlite:redirects
+2024-08-16 11:20:06,951 - INFO - Top 10 hacker news
+2024-08-16 11:20:06,956 - DEBUG - Cache directives from request headers: CacheDirectives()
+2024-08-16 11:20:06,956 - DEBUG - Pre-read cache checks: Passed
+2024-08-16 11:20:06,961 - DEBUG - Post-read cache actions: CacheActions(expire_after=600, resend_request=True)
+2024-08-16 11:20:06,961 - DEBUG - Stale response; attempting to re-send request
+2024-08-16 11:20:06,962 - DEBUG - Starting new HTTPS connection (1): hacker-news.firebaseio.com:443
+2024-08-16 11:20:08,411 - DEBUG - https://hacker-news.firebaseio.com:443 "GET /v0/topstories.json HTTP/11" 200 4501
+2024-08-16 11:20:08,412 - DEBUG - Pre-write cache checks: Passed
+2024-08-16 11:20:08,419 - DEBUG - response status code : 200
+2024-08-16 11:20:08,420 - DEBUG - response.json()[:count] : [41262691, 41263843, 41264716, 41233939, 41236993, 41264973, 41264070, 41260679, 41260345, 41236824]
+2024-08-16 11:20:08,422 - DEBUG - Starting new HTTPS connection (1): hacker-news.firebaseio.com:443
+2024-08-16 11:20:09,064 - DEBUG - https://hacker-news.firebaseio.com:443 "GET /v0/item/41262691.json HTTP/11" 200 333
+2024-08-16 11:20:09,065 - DEBUG - response status code : 200
+2024-08-16 11:20:09,065 - DEBUG - top story - response.json() : {'by': 'OuterVale', 'descendants': 48, 'id': 41262691, 'kids': [41263079, 41263613, 41263457, 41264950, 41263903, 41263394, 41263947, 41264922, 41264439, 41263710, 41263301, 41263239, 41263867, 41263566, 41263518, 41264125, 41263779], 'score': 245, 'time': 1723776572, 'title': 'CSS Grid Areas', 'type': 'story', 'url': 'https://ishadeed.com/article/css-grid-area/'}
+2024-08-16 11:20:09,067 - DEBUG - Starting new HTTPS connection (1): hacker-news.firebaseio.com:443
+2024-08-16 11:20:09,638 - DEBUG - https://hacker-news.firebaseio.com:443 "GET /v0/item/41263843.json HTTP/11" 200 290
+2024-08-16 11:20:09,639 - DEBUG - response status code : 200
+2024-08-16 11:20:09,639 - DEBUG - top story - response.json() : {'by': 'xiaodai', 'descendants': 19, 'id': 41263843, 'kids': [41265124, 41264283, 41265062, 41265058, 41264969, 41264708, 41264057, 41264299, 41264880, 41264495], 'score': 73, 'time': 1723791709, 'title': 'PyScript: An open source platform for Python in the browser', 'type': 'story', 'url': 'https://pyscript.net/'}
+2024-08-16 11:20:09,640 - DEBUG - Starting new HTTPS connection (1): hacker-news.firebaseio.com:443
+2024-08-16 11:20:10,192 - DEBUG - https://hacker-news.firebaseio.com:443 "GET /v0/item/41264716.json HTTP/11" 200 210
+2024-08-16 11:20:10,193 - DEBUG - response status code : 200
+2024-08-16 11:20:10,193 - DEBUG - top story - response.json() : {'by': 'akashgoswami', 'descendants': 1, 'id': 41264716, 'kids': [41265250], 'score': 11, 'time': 1723800470, 'title': 'Automating My /Now Page', 'type': 'story', 'url': 'https://akashgoswami.dev/posts/automating-my-now-page/'}
+2024-08-16 11:20:10,194 - DEBUG - Starting new HTTPS connection (1): hacker-news.firebaseio.com:443
+2024-08-16 11:20:10,867 - DEBUG - https://hacker-news.firebaseio.com:443 "GET /v0/item/41233939.json HTTP/11" 200 483
+2024-08-16 11:20:10,868 - DEBUG - response status code : 200
+2024-08-16 11:20:10,868 - DEBUG - top story - response.json() : {'by': 'mrtbld', 'descendants': 57, 'id': 41233939, 'kids': [41263341, 41265076, 41263511, 41263261, 41263393, 41264961, 41263819, 41264670, 41263543, 41265006, 41264928, 41264992, 41263407, 41264699, 41263417, 41263687, 41263459, 41263352, 41263794, 41263462], 'score': 122, 'time': 1723543188, 'title': 'Total War: Rome II and Creative Assembly – My Statement Ten Years On', 'type': 'story', 'url': 'https://medium.com/@julianmckinlay/total-war-rome-ii-and-creative-assembly-my-statement-ten-years-on-d964f65b0a8f'}
+2024-08-16 11:20:10,869 - DEBUG - Starting new HTTPS connection (1): hacker-news.firebaseio.com:443
+2024-08-16 11:20:11,435 - DEBUG - https://hacker-news.firebaseio.com:443 "GET /v0/item/41236993.json HTTP/11" 200 334
+2024-08-16 11:20:11,436 - DEBUG - response status code : 200
+2024-08-16 11:20:11,436 - DEBUG - top story - response.json() : {'by': 'vngzs', 'descendants': 6, 'id': 41236993, 'kids': [41265020, 41264637], 'score': 37, 'time': 1723566847, 'title': 'Reversing the AMD Secure Processor (PSP) – Part 2: Cryptographic Co-Processor', 'type': 'story', 'url': 'https://dayzerosec.com/blog/2023/04/22/reversing-the-amd-secure-processor-psp-part-2-cryptographic-co-processor-ccp.html'}
+2024-08-16 11:20:11,437 - DEBUG - Starting new HTTPS connection (1): hacker-news.firebaseio.com:443
+2024-08-16 11:20:12,096 - DEBUG - https://hacker-news.firebaseio.com:443 "GET /v0/item/41264973.json HTTP/11" 200 291
+2024-08-16 11:20:12,097 - DEBUG - response status code : 200
+2024-08-16 11:20:12,097 - DEBUG - top story - response.json() : {'by': 'tosh', 'descendants': 1, 'id': 41264973, 'kids': [41265266, 41264979], 'score': 16, 'time': 1723803427, 'title': "Mpox: Sweden confirms first case of 'more grave' variant outside Africa", 'type': 'story', 'url': 'https://www.theguardian.com/world/article/2024/aug/15/mpox-variant-clade-i-case-sweden'}
+2024-08-16 11:20:12,098 - DEBUG - Starting new HTTPS connection (1): hacker-news.firebaseio.com:443
+2024-08-16 11:20:12,687 - DEBUG - https://hacker-news.firebaseio.com:443 "GET /v0/item/41264070.json HTTP/11" 200 421
+2024-08-16 11:20:12,688 - DEBUG - response status code : 200
+2024-08-16 11:20:12,688 - DEBUG - top story - response.json() : {'by': 'qwertox', 'descendants': 58, 'id': 41264070, 'kids': [41265207, 41264952, 41264322, 41264358, 41264710, 41264301, 41264426, 41264302, 41265154, 41264826, 41265142, 41264602, 41264356], 'score': 96, 'time': 1723793964, 'title': 'Pixel smartphones delivered with secret but inactive remote maintenance', 'type': 'story', 'url': 'https://www.heise.de/en/news/Pixel-smartphones-delivered-with-secret-but-inactive-remote-maintenance-9836887.html'}
+2024-08-16 11:20:12,689 - DEBUG - Starting new HTTPS connection (1): hacker-news.firebaseio.com:443
+2024-08-16 11:20:13,326 - DEBUG - https://hacker-news.firebaseio.com:443 "GET /v0/item/41260679.json HTTP/11" 200 335
+2024-08-16 11:20:13,326 - DEBUG - response status code : 200
+2024-08-16 11:20:13,327 - DEBUG - top story - response.json() : {'by': 'fidotron', 'descendants': 50, 'id': 41260679, 'kids': [41261173, 41261366, 41261844, 41265081, 41263833, 41261254, 41261409, 41263316, 41260972, 41261329, 41261734, 41261466], 'score': 141, 'time': 1723758173, 'title': 'RP2350 PicoDVI Preview', 'type': 'story', 'url': 'https://github.com/Wren6991/PicoDVI/commit/ca941baf37e3f04738b8e641896d85feb3430385'}
+2024-08-16 11:20:13,327 - DEBUG - Starting new HTTPS connection (1): hacker-news.firebaseio.com:443
+2024-08-16 11:20:14,963 - DEBUG - https://hacker-news.firebaseio.com:443 "GET /v0/item/41260345.json HTTP/11" 200 376
+2024-08-16 11:20:14,964 - DEBUG - response status code : 200
+2024-08-16 11:20:14,964 - DEBUG - top story - response.json() : {'by': 'rmason', 'descendants': 44, 'id': 41260345, 'kids': [41260970, 41261303, 41261079, 41261145, 41260933, 41261111, 41263615, 41261442, 41261649, 41263432, 41260443, 41261565, 41261002, 41261861, 41261433, 41261084], 'score': 155, 'time': 1723755875, 'title': "One man's quest to restore the first-ever Air Force One", 'type': 'story', 'url': 'https://www.atlasobscura.com/articles/first-air-force-one'}
+2024-08-16 11:20:14,964 - DEBUG - Starting new HTTPS connection (1): hacker-news.firebaseio.com:443
+2024-08-16 11:20:15,578 - DEBUG - https://hacker-news.firebaseio.com:443 "GET /v0/item/41236824.json HTTP/11" 200 330
+2024-08-16 11:20:15,578 - DEBUG - response status code : 200
+2024-08-16 11:20:15,578 - DEBUG - top story - response.json() : {'by': 'nutlope', 'descendants': 7, 'id': 41236824, 'kids': [41263451, 41263272, 41263257], 'score': 70, 'time': 1723565680, 'title': "A practitioner's guide to testing and running GPU clusters", 'type': 'story', 'url': 'https://www.together.ai/blog/a-practitioners-guide-to-testing-and-running-large-gpu-clusters-for-training-generative-ai-models'}

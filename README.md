@@ -28,6 +28,6 @@ docker-compose build
 
 docker-compose up
 
-Open in the browser to see the results , 0.0.0.0:8000
+Open in the browser to see the results , http://0.0.0.0:8000/
 
-For Api documentation , 0.0.0.0:8000/docs
+For Api documentation , http://0.0.0.0:8000/docs

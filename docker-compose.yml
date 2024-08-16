@@ -11,8 +11,8 @@ services:
 
   test:
     build: .
-    command: pytest
+    command: pytest /app/main_test.py
     volumes:
-      - .:app
+      - .:/app
     depends_on:
       - web
